@@ -59,7 +59,7 @@ exports.getImageById = async (req, res) => {
 
 // --- UPDATE Image (PUT /:id) ---
 exports.updateImage = async (req, res) => {
-  try {
+  try{
     const { title, description } = req.body;
     let updateFields = { title, description };
     let oldImagePath = null;
